@@ -11,6 +11,6 @@ namespace Play.Common
         Task<T> GetAsync(Guid id);
         Task<T> GetAsync(Expression<Func<T, bool>> filter);
         Task RemoveAsync(Guid id);
-        Task UpdateAsyn(T entity);
+        Task UpdateAsync(T entity);
     }
 }

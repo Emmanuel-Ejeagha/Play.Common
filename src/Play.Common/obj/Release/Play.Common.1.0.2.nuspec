@@ -2,12 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Play.Common</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Play.Common</authors>
     <description>Package Description</description>
     <repository type="git" commit="01fe9348b205b692e1d00846efe736829bd533a4" />
     <dependencies>
       <group targetFramework="net8.0">
+        <dependency id="MassTransit" version="8.3.6" exclude="Build,Analyzers" />
         <dependency id="MassTransit.AspNetCore" version="7.3.1" exclude="Build,Analyzers" />
         <dependency id="MassTransit.RabbitMQ" version="8.3.6" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.Configuration" version="9.0.2" exclude="Build,Analyzers" />

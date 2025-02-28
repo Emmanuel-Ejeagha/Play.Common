@@ -18,7 +18,7 @@ namespace Play.Common.MassTransit
                 configure.UsingRabbitMq((context, configuration) =>
                 {
                     var rabbitMQSettings = Configuration.GetSection(nameof(RabbitMQSettings)).Get<RabbitMQSettings>();
-                    configuration.Host(rabbitMQSettings.Host);
+                    configuration.Host(rabbitMQSettings?.Host);
                 });
             });
 

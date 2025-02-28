@@ -44,7 +44,7 @@ namespace Play.Common.MongoDB
             await dbCollection.InsertOneAsync(entity);
         }
 
-        public async Task UpdateAsyn(T entity)
+        public async Task UpdateAsync(T entity)
         {
             if (entity == null)
             {

@@ -5,7 +5,7 @@
   },
   "projects": {
     "/home/emma/Desktop/PROJECTS/Play.Common/src/Play.Common/Play.Common.csproj": {
-      "version": "1.0.1",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "/home/emma/Desktop/PROJECTS/Play.Common/src/Play.Common/Play.Common.csproj",
         "projectName": "Play.Common",
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.3.6, )"
+            },
             "MassTransit.AspNetCore": {
               "target": "Package",
               "version": "[7.3.1, )"
